@@ -58,16 +58,7 @@ class LoginPage extends React.Component {
                             </InputGroup.Text>
                             <Form.Control ref="username" placeholder="Nomer Meja" />
                         </InputGroup>
-                        {/* <Form.Label style={styles.fontColor}>Password</Form.Label>
-                        <InputGroup className="mb-3">
-                            <InputGroup.Text id="basic-addon1" onClick={() => this.setState({ visibility: !visibility })}>
-                                {visibility ? <i className="fa-solid fa-eye"></i> : <i className="fa-solid fa-eye-slash"></i>}
-                            </InputGroup.Text>
-                            <Form.Control
-                                ref='password'
-                                type={visibility ? 'text' : 'password'}
-                                placeholder="Masukkan Password Anda" />
-                        </InputGroup> */}
+                        
                         <div style={styles.contButton}>
                             <Button variant="warning" onClick={this.onLogin}>
                                 <i style={{ marginRight: '10px' }} className="fa-solid fa-door-open"></i>

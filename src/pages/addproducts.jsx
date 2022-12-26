@@ -73,19 +73,10 @@ class AddProductPage extends React.Component {
         }
         
 
-        // menambah data baru di db json
-        // <script src="https://unpkg.com/axios/dist/axios.min.js">
-       
             axios.post(`${url}/products`, obj)
                 .then(res => {
                     console.log(res.data)
-                    // Axios.get('http://localhost:2000/activities')
-                    //     .then(res => {
-                    //         this.setState({ activities: res.data })
-                    //     })
-                    // this.fetchData()
-                    // Swal.fire('Produk Berhasil Ditambahkan, silahkan cek di Home')
-                   
+                    
                     swal({
                         title: "Sukses!",
                         text: "Produk Berhasil Ditambahkan, silahkan cek di Home",

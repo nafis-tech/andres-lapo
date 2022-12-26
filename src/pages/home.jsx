@@ -228,7 +228,7 @@ class HomePage extends React.Component {
         axios.delete(`${url}/products/${index}`)
             .then(res => {
                 console.log(res.data)
-                // Swal.fire(`berhasil hapus produk ke ${index}`)
+               
                 swal({
                     title: "Sukses!",
                     text: "Berhasil Hapus produk",

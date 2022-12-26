@@ -105,49 +105,7 @@ class RegisPage extends React.Component {
                             ref='username'
                             placeholder="Nomer Meja" />
                     </InputGroup>
-                    {/* <Form.Text className="text-danger">
-                        {this.state.usernameErr ? 'Minimal 6 karakter berupa huruf/angka (bukan simbol)' : ''}
-                    </Form.Text> */}
-                    <br />
-                    {/* <Form.Label className="mt-1" style={styles.fontColor}>E-mail</Form.Label>
-                    <InputGroup>
-                        <InputGroup.Text id="basic-addon1">
-                            <i className="fa-solid fa-envelope"></i>
-                        </InputGroup.Text>
-                        <Form.Control
-                            ref='email'
-                            onChange={(e) => this.emailValid(e)}
-                            placeholder="Masukkan E-mail Anda" />
-                    </InputGroup>
-                    <Form.Text className="text-danger">
-                        {this.state.emailErr ? 'Email tidak valid' : ''}
-                    </Form.Text>
-                    <br />
-                    <Form.Label className="mt-1" style={styles.fontColor}>Password</Form.Label>
-                    <InputGroup>
-                        <InputGroup.Text id="basic-addon1" onClick={() => this.setState({ visibility: !visibility })}>
-                            {visibility ? <i className="fa-solid fa-eye"></i> : <i className="fa-solid fa-eye-slash"></i>}
-                        </InputGroup.Text>
-                        <Form.Control
-                            ref='password'
-                            onChange={(e) => this.passValid(e)}
-                            type={visibility ? 'text' : 'password'}
-                            placeholder="Masukkan Password Anda" />
-                    </InputGroup>
-                    <Form.Text className="text-danger">
-                        {this.state.passErr ? 'Minimal 6 karakter terdiri dari huruf, angka, dan simbol' : ''}
-                    </Form.Text>
-                    <br />
-                    <Form.Label className="mt-1" style={styles.fontColor}>Confirm Password</Form.Label>
-                    <InputGroup className="mb-3">
-                        <InputGroup.Text id="basic-addon1" onClick={() => this.setState({ visibility2: !visibility2 })}>
-                            {visibility2 ? <i className="fa-solid fa-eye"></i> : <i className="fa-solid fa-eye-slash"></i>}
-                        </InputGroup.Text>
-                        <Form.Control
-                            ref='confPassword'
-                            type={visibility2 ? 'text' : 'password'}
-                            placeholder="Konfirmasi Password Anda" />
-                    </InputGroup> */}
+                   
                     <div style={styles.contButton}>
                         <Button onClick={this.onRegister} variant="warning">
                             <i style={{ marginRight: '10px' }} className="fa-solid fa-user-plus"></i>

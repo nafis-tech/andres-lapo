@@ -12,7 +12,7 @@ import Footer from '../component/footer';
 import { connect } from 'react-redux'
 import axios from 'axios'
 import { delProduk, addCart } from '../redux/actions'
-import Swal from 'sweetalert2'
+import swal from 'sweetalert'
 
 // const url = 'https://jajan-database.herokuapp.com'
 const url = 'http://localhost:2000'
@@ -133,7 +133,14 @@ class HomePage extends React.Component {
                 console.log(res.data)
                 this.fecthData()
             })
-        Swal.fire('berhasil memasukan produk ke cart')
+        // Swal.fire('berhasil memasukan produk ke cart')
+        swal({
+            title: "Sukses!",
+            text: "Berhasil Memasukan produk ke cart!",
+            icon: "success",
+            button: "Ok!",
+          });
+
         // this.setState({ qty: '' })
     }
 
@@ -221,7 +228,13 @@ class HomePage extends React.Component {
         axios.delete(`${url}/products/${index}`)
             .then(res => {
                 console.log(res.data)
-                Swal.fire(`berhasil hapus produk ke ${index}`)
+                // Swal.fire(`berhasil hapus produk ke ${index}`)
+                swal({
+                    title: "Sukses!",
+                    text: "Berhasil Hapus produk",
+                    icon: "success",
+                    button: "Ok!",
+                  });
                 this.fecthData()
 
                 // this.fetchData()eror

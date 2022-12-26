@@ -10,7 +10,7 @@ import { connect } from 'react-redux'
 import { login, errLoginFalse } from '../redux/actions'
 import NavigationBar from '../component/navigationBar';
 import Footer from '../component/footer'
-import Swal from 'sweetalert2'
+import swal from 'sweetalert'
 
 class LoginPage extends React.Component {
     constructor(props) {

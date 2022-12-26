@@ -9,7 +9,7 @@ import {
     Image
 } from 'react-bootstrap'
 import Footer from '../component/footer'
-import Swal from 'sweetalert2'
+import swal from 'sweetalert'
 
 // const url = 'https://jajan-database.herokuapp.com'
 const url = 'http://localhost:2000'

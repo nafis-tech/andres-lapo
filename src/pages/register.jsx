@@ -10,7 +10,7 @@ import {
 import { Link, Navigate } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { register, resetRegErr } from '../redux/actions'
-import Swal from 'sweetalert2'
+import swal from 'sweetalert'
 
 class RegisPage extends React.Component {
     constructor(props) {
@@ -74,23 +74,17 @@ class RegisPage extends React.Component {
     render() {
         if (this.props.successReg) {
             return 
-                Swal.fire('Hello, Admin! Register Meja Baru Sukses.') 
+                // Swal.fire('Hello, Admin! Register Meja Baru Sukses.') 
+                swal({
+                    title: "Sukses!",
+                    text: "Hello, Admin! Register Meja Baru Sukses!",
+                    icon: "success",
+                    button: "Ok!",
+                  });
+        
                 
             
-            // <div class="Swal.fire Swal.fire-success" role="Swal.fire">
-            //     A simple success Swal.fire—check it out!
-            // </div>
-            // <div class="toast" role="Swal.fire" aria-live="assertive" aria-atomic="true">
-            //     <div class="toast-header">
-            //         {/* <img src="..." class="rounded me-2" alt="..."> */}
-            //             <strong class="me-auto">Jajanku</strong>
-            //             <small>11 mins ago</small>
-            //             <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-            //     </div>
-            //     <div class="toast-body">
-            //         Hello, Admin! Register Meja Baru Sukses.
-            //     </div>
-            // </div>
+           
 
         }
 

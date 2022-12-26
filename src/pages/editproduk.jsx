@@ -10,7 +10,7 @@ import {
 import { connect } from 'react-redux'
 import { Link, Navigate } from 'react-router-dom'
 import { addCart } from '../redux/actions'
-import Swal from 'sweetalert2'
+import swal from 'sweetalert'
 
 // const url = 'https://jajan-database.herokuapp.com'
 const url = 'http://localhost:2000'
@@ -56,7 +56,15 @@ class EditProduk extends React.Component {
         Axios.patch(`${url}/products/${document.location.search.substring(1)}`, body)
             .then(res => {
                 console.log(res.data)
-                Swal.fire('Berhasil Mengedit Produk, Silahkan kembali ke Home')
+                // Swal.fire('Berhasil Mengedit Produk, Silahkan kembali ke Home')
+                swal({
+                    title: "Sukses!",
+                    text: "Produk Berhasil Di Edit, silahkan cek di Home!",
+                    icon: "success",
+                    button: "Ok!",
+                  });
+        
+                
                 return <Navigate to="/" />
             })
             .catch(err => {

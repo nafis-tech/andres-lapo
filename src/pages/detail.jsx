@@ -11,7 +11,7 @@ import { connect } from 'react-redux'
 import { Navigate } from 'react-router-dom'
 import { addCart } from '../redux/actions'
 import { Link } from 'react-router-dom'
-import Swal from 'sweetalert2'
+import swal from 'sweetalert'
 
 // const url = 'https://jajan-database.herokuapp.com'
 const url = 'http://localhost:2000'

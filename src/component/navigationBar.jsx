@@ -11,7 +11,7 @@ import { LOGO } from '../assets'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { logout } from '../redux/actions'
-import Swal from 'sweetalert2'
+import swal from 'sweetalert'
 
 class NavigationBar extends React.Component {
     render() {

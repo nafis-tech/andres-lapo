@@ -149,20 +149,6 @@
         "https://images.tokopedia.net/img/cache/500-square/VqbcmM/2021/10/5/495095cf-57a1-4484-a63d-ce8c7cee9533.jpg"
       ],
       "id": 14
-    },
-    {
-      "name": "dadda",
-      "category": "",
-      "brand": "",
-      "rating": "",
-      "colour": "",
-      "description": "dadhasil edit ya ini",
-      "price": 131,
-      "stock": 12,
-      "images": [
-        "dad"
-      ],
-      "id": 15
     }
   ],
   "slider": [
@@ -708,6 +694,29 @@
         }
       ],
       "id": 16
+    },
+    {
+      "idUser": 3,
+      "username": "3",
+      "time": "12/26/2022, 2:30:16 PM",
+      "products": [
+        {
+          "id": 5,
+          "name": "Lumpia",
+          "category": "",
+          "brand": "FOSSIL",
+          "rating": [],
+          "colour": "",
+          "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus similique optio delectus dolores corrupti, nostrum dolore harum possimus ipsam accusamus architecto culpa tenetur illum error sed dolorum? Libero, voluptas harum?",
+          "price": 4000,
+          "stock": 12,
+          "qty": 1,
+          "images": [
+            "https://sweetrip.id/wp-content/uploads/2021/03/lumpia-semarang.png"
+          ]
+        }
+      ],
+      "id": 17
     }
   ]
 }

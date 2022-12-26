@@ -1,6 +1,8 @@
 import React from 'react'
 import '../styling/cart.css'
-import Swal from 'sweetalert2'
+// import swal from 'sweetalert'
+
+import swal from 'sweetalert'
 
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
@@ -156,8 +158,14 @@ class CartPage extends React.Component {
         this.setState({askPass: false, errPass: false, checkoutSucces: true})
 
         this.props.checkout(this.props.id, dataHistory)
-        // Swal.fire('silahkan menunggu pesanan anda')
-        Swal.fire('silahkan menunggu pesanan anda')
+        
+       
+        swal({
+            title: "Sukses!",
+            text: "Silahkan Menunggu Pesanan Anda!",
+            icon: "success",
+            button: "Ok!",
+          });
 
     }
 

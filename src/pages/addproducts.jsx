@@ -10,7 +10,7 @@ import { Link, Navigate } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { register, resetRegErr } from '../redux/actions'
 import axios  from 'axios'
-import Swal from 'sweetalert2'
+import swal from 'sweetalert'
 
 const url = 'http://localhost:2000'
 class AddProductPage extends React.Component {
@@ -85,7 +85,14 @@ class AddProductPage extends React.Component {
                     //     })
                     // this.fetchData()
                     // Swal.fire('Produk Berhasil Ditambahkan, silahkan cek di Home')
-                    Swal.fire('Produk Berhasil Ditambahkan, silahkan cek di Home')
+                   
+                    swal({
+                        title: "Sukses!",
+                        text: "Produk Berhasil Ditambahkan, silahkan cek di Home",
+                        icon: "success",
+                        button: "Ok!",
+                      });
+            
                 
                 })
                 .catch(err =>{
